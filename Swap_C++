@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std; 
+
+void swap (string &lhs, string &rhs)
+{
+    string temp; 
+    temp =lhs; 
+    lhs = rhs; 
+    rhs = temp; 
+    
+}
+
+int main ()
+
+{
+    string x;
+    string y;
+    cout<< "Please enter the string you would like to change" << endl;
+    getline(cin,x); 
+    cout<< "Please enter the string you would like to change it with" << endl;
+    getline(cin,y); 
+    
+    
+    cout << "String X orignally is: "<< x << " String Y orignally is: "<< y <<endl;
+    swap(x,y);
+    cout << "String X now is: " << x << " String Y now is: "<< y << endl; 
+    return (0);
+}
